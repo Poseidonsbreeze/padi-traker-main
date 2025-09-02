@@ -1,0 +1,308 @@
+.footer {
+  background: #612A65;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  padding: 3rem 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Left Section */
+.footer-left .footer-title {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+.footer-left .footer-title span {
+  color: #ffc107;
+}
+.foundation-highlight {
+  color: #ffc107;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Socials */
+.footer-socials {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.footer-socials a {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+.footer-socials a:hover {
+  color: #ffc107;
+}
+
+/* Latest News Section */
+.footer-news {
+  flex: 1;
+}
+.news-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.news-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+.news-item img {
+  width: 90px;
+  height: 60px; /* Rectangle shape */
+  object-fit: cover;
+  border-radius: 6px;
+}
+.news-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.news-date {
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+/* Subscribe Section */
+.footer-subscribe h3 {
+  color: #ffc107;
+  margin-bottom: 0.5rem;
+}
+.footer-subscribe p {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.subscribe-form input {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  width: 100%;
+  max-width: 400vh; /* longer email input */
+}
+.subscribe-form input[type="email"] {
+  max-width: 40;   
+  height: 9rem;      
+  padding: 0 1rem;     
+  font-size: 1rem;     
+  box-sizing: border-box;
+}
+.subscribe-form button {
+  padding: 0.7rem 1rem; /* shorter button width */
+  border: none;
+  border-radius: 4px;
+  background: #ffc107;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  max-width: 150px;
+}
+.subscribe-form button:hover {
+  background: #e0a800;
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid #fff;
+  margin: 2rem 0;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+.footer-contact span,
+.footer-hours span {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.footer-hours .weekend {
+  margin-left: 1.6rem; /* indent Sat-Sun under Mon-Fri */
+  display: block;
+}
+.read-more-wrapper {
+  display: block;
+  margin-top: 0.5rem;   /* small gap from Foundation text */
+  margin-bottom: 1rem;  /* gap before socials */
+}
+
+.read-more-btn {
+  display: block;        /* ensures it sits on its own line */
+  padding: 0.5rem 1.2rem;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #fff;
+  color: #5b2c83;
+}
+
+.read-more-btn:hover {
+  background: #fff;
+  color: #5b2c83;
+}
+
+.footer-copy {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #ccc;
+}
+
+@media (max-width: 768px) {
+  /* Stack main sections vertically with spacing */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  /* Make .footer-left flex so we can control element order */
+  .footer-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Foundation text adjustments */
+  .foundation-highlight {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.3rem;
+  }
+
+  /* Ensure button stays right below foundation text */
+  .read-more-wrapper {
+    display: flex;
+    justify-content: center;
+    order: 2; /* Comes after foundation text */
+    margin-top: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .read-more-btn {
+    width: auto;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  /* Social icons should appear after the button */
+  .footer-socials {
+    justify-content: center;
+    margin-top: 1rem;
+    order: 3;
+  }
+
+  /* Title and text scaling */
+  .footer-left .footer-title {
+    font-size: 1.6rem;
+  }
+  .footer-left .footer-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  /* News Section adjustments */
+  .footer-news {
+    width: 100%;
+  }
+  .footer-news .news-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  .footer-news .news-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    margin-bottom: 1.2rem;
+  }
+  .footer-news .news-item img {
+    width: 80px;
+    height: 60px;
+  }
+  .news-text {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
+  /* Subscribe Section adjustments */
+  .footer-subscribe {
+    width: 100%;
+  }
+  .subscribe-form {
+    align-items: center;
+  }
+  .subscribe-form input {
+    width: 90%;
+    max-width: 350px;
+    font-size: 1rem;
+  }
+  .subscribe-form input[type="email"] {
+    height: 3.2rem; /* taller email input on mobile */
+  }
+  .subscribe-form button {
+    width: 50%;
+    max-width: 180px;
+  }
+
+  /* Divider spacing */
+  .divider {
+    margin: 1.5rem 0;
+  }
+
+  /* Footer Bottom adjustments */
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    text-align: center;
+  }
+  .footer-contact,
+  .footer-hours,
+  .footer-emails {
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .footer-contact span,
+  .footer-hours span {
+    justify-content: center;
+    font-size: 0.95rem;
+  }
+  .footer-hours .weekend {
+    margin-left: 0; /* remove indent for mobile */
+  }
+
+  /* Copy text */
+  .footer-copy {
+    font-size: 0.75rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}

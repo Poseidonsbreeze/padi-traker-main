@@ -1,0 +1,121 @@
+.landing-section {
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing-section .review-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background:#612A65;
+  background-size: cover;
+  background-position: center;
+  padding: 4rem 2rem;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+.landing-section .review-container .review-left {
+  flex: 1;
+  max-width: 450px;
+}
+
+.landing-section .review-container .review-left h2 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.landing-section .review-container .review-left p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.landing-section .review-container .review-left .review-btn {
+  padding: 0.7rem 1.5rem;
+  background: #ffc107;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.landing-section .review-container .review-left .review-btn:hover {
+  background: #e0a800;
+}
+
+.landing-section .review-container .review-card {
+  background: #fff;
+  color: #333;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 450px;
+  flex: 1;
+  margin-top: 2rem;
+}
+
+.landing-section .review-container .review-card .quote {
+  font-size: 3rem;
+  color: #7a57d1;
+  margin-bottom: 0.5rem;
+}
+
+.landing-section .review-container .review-card .review-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.landing-section .review-container .review-card .reviewer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.landing-section .review-container .review-card .reviewer img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.landing-section .review-container .review-card .reviewer h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.landing-section .review-container .review-card .reviewer span {
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.landing-section .news-updates {
+  padding: 3rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.landing-section .news-updates h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.landing-section .news-updates p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .landing-section .review-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .landing-section .review-container .review-card {
+    margin-top: 2rem;
+  }
+}
